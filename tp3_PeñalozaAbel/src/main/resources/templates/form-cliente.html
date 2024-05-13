@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-AR">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abel N Peñaloza">
+    <meta name="description" content="Web de Practica HTML y CSS">
+    <!--Reset de estilos-->
+    <link rel="stylesheet" href="../static/css/reset.css">
     <!--Estilos Generales-->
     <link rel="stylesheet" href="../static/css/estilos.css">
     <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
     <title>
-      Insert title here
+      Formulario de Cliente
     </title>
   </head>
   <body>
@@ -17,7 +22,7 @@
     </header>
     <main>
       <section>
-        <form action="#" method="post">
+        <form class="formulario-cliente" action="#" method="post">
           <label for="dni">
             DNI:
           </label>
@@ -150,11 +155,11 @@
           <label>
             Categorías de Interés:
           </label>
-          <input type="checkbox" id="categoria1" name="categorias[]" value="categoria1">
+          <input type="checkbox" id="categoria1" name="categorias1" value="categoria1">
           <label for="categoria1">
             Categoría 1
           </label>
-          <input type="checkbox" id="categoria2" name="categorias[]" value="categoria2">
+          <input type="checkbox" id="categoria2" name="categorias2" value="categoria2">
           <label for="categoria2">
             Categoría 2
           </label>
@@ -185,7 +190,18 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer id="pie-pagina">
+		<div>
+          <h4>Redes sociales</h4>
+          <div class="social-links">
+            <a class="enlace-footer" href="#">Youtube</a>
+            <a class="enlace-footer" href="#">Twitter</a>
+            <a class="enlace-footer" href="#">Instragram</a>
+            <a class="enlace-footer" href="#"></i>LinkedIn</a>
+            <a class="enlace-footer" href="#"></i>Twitch</a>
+          </div>
+          <p>email: abelnpenaloza@gmail.com</p>
+          <p>&copy;2024 Abel_Dev | Todos los derechos reservados</p>
     </footer>
   </body>
 </html>
