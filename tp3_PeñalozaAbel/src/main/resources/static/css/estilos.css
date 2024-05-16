@@ -1,27 +1,230 @@
 @charset "UTF-8";
-
-
-
-
-
-/* Otros estilos necesarios para el formulario de cliente */
-.formulario-cliente {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f4f4f4;
+body {
+    background-image: url('../img/fondo-azul.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  }
+/* Estilos para el encabezado y el menú de navegación */
+#encabezado {
+    background-image: url('../img/fondo-header-footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: Arial;
+    font-size: 1rem;
+    color: white; /* Texto blanco */
+    font-weight: bold;
+    padding: 15px;
+    display: flex; /* Utiliza flexbox */
+    align-items: center; /* Alinea verticalmente */
+    
 }
 
+/* Estilos para la imagen en el header */
+#encabezado img {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+.menu-navegacion {
+    margin-left: auto; /* Mueve el menú hacia la derecha */
+}
 
+.menu-navegacion ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-.social-links a {
+.menu-navegacion ul li {
+    margin-left: 20px; /* Espacio entre elementos del menú */
+    display: inline
+    
+}
+
+.enlace-menu a {
+    text-decoration: none;
     color: white;
-    margin-right: 10px;
+    font-weight: bold;
 }
+
+/* Estilos para el contenido principal */
+.contenedor-principal{
+	display: flex;
+	
+}
+/* Estilos para las secciones del contenido principal */
+.contenedor-seccion {
+	width: 70%;
+	flex:1;
+	margin: 20px;
+	padding: 10px;
+	border: 2px solid #fff;
+	
+}
+.contenedor-seccion h2{
+	text-align: center; /* Centra el texto */
+	margin: 20px;
+    
+}
+.contenedor-seccion p {
+    text-align: justify; /* Justifica el texto */
+}
+.contenedor-seccion h3{
+	margin-top: 30px;
+}
+/* Estilos para las listas de las secciones */
+.contenedor-seccion ol, .contenedor-seccion ul {
+    margin-left: 20px; /* Indentación de la lista */
+    
+}
+/* Estilos para el aside */
+.contenedor-aside {
+	
+    width: 30%; /* El aside ocupa el 25% del ancho */
+    margin: 20px;
+    border: 2px solid #fff;
+    padding: 10px;
+    
+}
+
+/* Estilos para la imagen dentro del aside */
+aside img {
+    max-width: 100%; /* La imagen se ajusta automáticamente a su tamaño */
+    margin-top: 10px;
+    border-radius:4px;
+   
+}
+.contenedor-seccion-aside{
+	display: flex;
+}
+/* Estilos para el h2 centrado en la primera seccion */
+.primera-seccion h2 {
+    text-align: center;
+    font-size:1.5rem;
+}
+
+/* Estilos para el contenido justificado en la primera seccion */
+.primera-seccion p,
+.primera-seccion ol {
+    text-align: justify;
+}
+aside h3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size:1.5rem;
+}
+
+/* Estilos para centrar la tabla en la tercera seccion*/
+table{
+	width: 100%;
+	border-spacing: 10px;
+	margin: auto;
+	box-shadow: 0px 0px 20px #0002;
+	
+}
+.tercera-seccion h2{
+	text-align: center;
+	margin-bottom: 20px;
+	font-size:1.5rem;
+}
+td,th{
+	text-align: center;
+	padding: 6px;
+	font-family: sans-serif;
+	border: none;
+	border-bottom: 2px solid #0004;
+}
+td{
+	
+	color: #444;
+}
+
+/* Estilos para el formulario */
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+h1{
+	margin-bottom:10px;
+	text-align: center;
+}
+
+/* Estilos para los inputs */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea,
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Estilos para los label */
+label{
+  display: inline;	
+  margin-right: 5px;
+}
+
+/* Estilos para el botón de enviar */
+input[type="submit"] {
+  display: block; /* Cambiar a bloque para que ocupe toda la anchura disponible */
+  width: 80%; 
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 10px; /* Agregar relleno para mejorar la apariencia */
+  background-color: #2c74d8; /* Color de fondo */
+  border-radius: 5px;
+  color: white; /* Color del texto */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+  font-size: 16px; /* Tamaño de fuente */
+  text-align: center; /* Alinear texto al centro */
+  margin-top:10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
 /* Estilos para el pie de página */
 #pie-pagina {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+   background-image: url('../img/fondo-header-footer.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed; 
+   padding:20px;
+   color: white;
+   display: flex; /* Usar flexbox para alinear los elementos en línea */
+   flex-direction: column; /* Alinear elementos en columna */
+   align-items: center; /* Centrar elementos horizontalmente */
+   text-align: center; /* Alinear texto al centro */
+    
+}
+
+/* Estilo para los enlaces de redes sociales */
+.social-links {
+  margin-bottom: 10px; /* Agregar un pequeño margen inferior */
+  
+}
+
+/* Estilo para los enlaces de redes sociales */
+.social-links a {
+  margin: 0 5px; /* Agregar espacio entre los enlaces */
+  text-decoration: none;
+  color: white;
+  
+}
+.mail-footer{
+	text-decoration: none;
+	color: white;
 }
