@@ -222,10 +222,12 @@ input[type="submit"]:hover {
 .social-links a {
   margin: 0 5px; /* Agregar espacio entre los enlaces */
   text-decoration: none;
+  background-color:gray;
   color: white;
   
 }
 .mail-footer{
+	background-color:black;
 	text-decoration: none;
 	color: white;
 }
